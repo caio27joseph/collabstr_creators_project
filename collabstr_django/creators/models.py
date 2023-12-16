@@ -15,7 +15,12 @@ class Creator(models.Model):
 
 
 class Content(models.Model):
-    creator = models.ForeignKey(Creator, on_delete=models.CASCADE)
+    creator = models.ForeignKey(
+        Creator,
+        on_delete=models.CASCADE,
+        related_name="content_set",
+        related_query_name="content",
+    )  # Define the ForeignKey relationship
     url = models.URLField()
 
     def __str__(self):

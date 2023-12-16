@@ -3,7 +3,7 @@ from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
+from django.db.models import Prefetch
 from .models import Content, Creator
 from .serializers import ContentSerializer, CreatorSerializer
 
@@ -13,11 +13,14 @@ class CreatorListCreateView(APIView):
         paginator = PageNumberPagination()
         paginator.page_size = 30  # Set the number of items per page
 
+        q = Creator.objects.prefetch_related(
+            Prefetch("content_set", queryset=Content.objects.all(), to_attr="contents")
+        )
         platform = request.query_params.get("platform")
         if platform:
-            creators = Creator.objects.filter(platform=platform)
-        else:
-            creators = Creator.objects.all()
+            q = q.filter(platform=platform)
+
+        creators = q.order_by("-rating").all()
 
         result_page = paginator.paginate_queryset(creators, request)
         serializer = CreatorSerializer(result_page, many=True)
