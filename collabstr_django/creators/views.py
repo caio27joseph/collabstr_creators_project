@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from rest_framework import status
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -9,13 +10,18 @@ from .serializers import ContentSerializer, CreatorSerializer
 
 class CreatorListCreateView(APIView):
     def get(self, request):
+        paginator = PageNumberPagination()
+        paginator.page_size = 30  # Set the number of items per page
+
         platform = request.query_params.get("platform")
         if platform:
             creators = Creator.objects.filter(platform=platform)
         else:
             creators = Creator.objects.all()
-        serializer = CreatorSerializer(creators, many=True)
-        return Response(serializer.data)
+
+        result_page = paginator.paginate_queryset(creators, request)
+        serializer = CreatorSerializer(result_page, many=True)
+        return paginator.get_paginated_response(serializer.data)
 
     def post(self, request):
         serializer = CreatorSerializer(data=request.data)
