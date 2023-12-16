@@ -1,67 +1,63 @@
-# Agile Task Manager (ATM) - Backend
+# Collabstr Full-Stack Developer Project
 
-## Overview
-The Agile Task Manager (ATM) is a Django-based backend for a task management and collaboration tool. It's designed to provide robust and scalable support for managing tasks and projects in a real-time collaborative environment.
+## Introduction
 
-## Backend Features Checklist
-- [ ] **User Authentication**
-  - Secure login and registration system using Django's built-in authentication.
-- [ ] **Project Management**
-  - APIs to create, view, update, and delete projects.
-- [ ] **Task Tracking**
-  - APIs to add, update, and delete tasks within projects.
-- [ ] **Real-Time Collaboration**
-  - Integration of Django Channels and WebSockets for real-time updates.
-- [ ] **Commenting System**
-  - API endpoints for enabling discussions on tasks.
-- [ ] **Notifications**
-  - Real-time alerts and notifications for task updates and comments.
-- [ ] **User Roles and Permissions**
-  - Manage different access levels for users.
-- [ ] **Database Integration**
-  - Configured to use PostgreSQL for data persistence.
+This project is a Django-based web application designed to showcase content from various creators. It combines RESTful backend services using Django REST framework with traditional Django views and templates, enhanced with jQuery for dynamic content updates.
 
-## Technology Stack
-- **Backend Framework:** Django (Python)
-- **Database:** PostgreSQL
-- **Real-Time Functionality:** Django Channels and WebSockets
-- **Authentication:** Django’s built-in authentication system
+## Project Scope
 
-## Getting Started
+### A. Back-End Development
+1. Models for storing data from a JSON file (`Creator` and `Content`).
+2. Script for populating SQLite database with creators and their content.
+3. Django REST framework to create RESTful services.
+4. Django view for querying the `Content` model and its related `Creator` object, with a limit of 30 objects returned.
 
-### Prerequisites
+### B. Front-End Development
+1. Display content with details of its creator.
+2. Implementation of tabs to filter creators by platform (Instagram, TikTok, User Generated Content) using AJAX and jQuery.
+3. Responsive design using modern CSS techniques.
+
+### C. Deployment
+1. Hosting the implementation on a publicly accessible webpage.
+2. Code hosted on a GitHub repository.
+
+## Prerequisites
 - Python 3.x
-- Django
-- PostgreSQL
-- Django Channels
+- Django 3.x or 5.x
+- Django REST Framework
+- Other Python libraries as required (listed in `requirements.txt`)
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone [repository-url]
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Set up your PostgreSQL database.
+## Installation and Setup
+1. Clone the repository.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run migrations: `python manage.py migrate`
+4. Populate the database: `python seed.py`
 
-4. Create a `.env` file in the root directory and populate it with your database credentials and other necessary environment variables.
+## Running the Application
+1. Start the server: `python manage.py runserver`
+2. Access the application at `http://localhost:8000`.
 
-5. Run migrations:
-   ```bash
-   python manage.py migrate
-   ```
+## Running Tests
+- Run tests using: `pytest` or `python manage.py test`
 
-6. Start the development server:
-   ```bash
-   python manage.py runserver
-   ```
+## Architecture and Design Decisions
 
-## Documentation
-- API Documentation
-- Database Schema
-- System Architecture
+### Backend
+- **Django REST Framework**: Used for creating RESTful services. It provides a powerful and flexible toolkit for building Web APIs.
+- **Data Models**: Models are defined to represent the data structure required for creators and their content.
+- **Database Migrations**: Django's migration system is used for evolving the database schema over time in a consistent and database-agnostic way.
 
-## Testing
-- Instructions for running and writing tests.
+### Frontend
+- **Django Views and Templates**: Leveraged for rendering the initial HTML content.
+- **jQuery and AJAX**: Used for dynamic content loading without the need to reload or navigate away from the current page. This enhances user experience by providing a smooth and interactive interface.
+- **Responsive Design**: Implemented using CSS, ensuring the application is accessible and usable across various devices and screen sizes.
+
+### Deployment
+- **Development Server**: Django's built-in server is used for development and testing.
+- **Production Deployment**: Instructions for deploying to a production environment can be added as needed, including settings for static file management, database configuration, and security settings.
+
+## Contact and Support
+For any queries or support during the project, please contact caio27joseph@gmail.com
+
+### OBS: Frontend Directory
+This directory is the first version of the front end without using the django templates.

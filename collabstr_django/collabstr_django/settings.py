@@ -92,22 +92,10 @@ CORS_ALLOW_CREDENTIALS = True
 
 DATABASES = {
     "default": {
-        "ENGINE": os.getenv(
-            "DATABASE_ENGINE", "django.db.backends.postgresql"
-        ),  # Default to PostgreSQL
-        "NAME": os.getenv("DATABASE_NAME", "postgres"),  # Default database name
-        "USER": os.getenv("DATABASE_USER", "postgres"),  # Default database user
-        "PASSWORD": os.getenv("DATABASE_PASSWORD", "postgres"),  # Default database password
-        "HOST": os.getenv("DATABASE_HOST", "localhost"),  # Default host
-        "PORT": os.getenv("DATABASE_PORT", "5432"),  # Default port for PostgreSQL
-        "TEST": {
-            "NAME": "collabstr_test",  # Set test database name
-            "KEEP_DB": True,  # Keep test database
-        },
+        "ENGINE": "django.db.backends.sqlite3",  # Change the engine to SQLite
+        "NAME": os.getenv("DATABASE_NAME", "db.sqlite3"),  # Default database name
     },
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
