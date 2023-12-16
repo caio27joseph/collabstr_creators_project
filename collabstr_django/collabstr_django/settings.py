@@ -156,3 +156,4 @@ REST_FRAMEWORK = {
 
 
 API_URL = "http://localhost:8000/api/"
+ALLOWED_HOSTS = [154.56.41.196, "caiojoseph.com"]
