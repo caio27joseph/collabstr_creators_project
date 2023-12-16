@@ -1,0 +1,1002 @@
+[
+    {
+        "model": "creators.creator",
+        "pk": 1,
+        "fields": {
+            "name": "Victoria Celine",
+            "username": "victoriaceline",
+            "rating": 1.8,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 2,
+        "fields": {
+            "name": "Nicila Costello ",
+            "username": "nicila",
+            "rating": 0.3,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 3,
+        "fields": {
+            "name": "Shirley Cheng",
+            "username": "nyc-mom-super",
+            "rating": 4.17,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 4,
+        "fields": {
+            "name": "BrandyWine",
+            "username": "brandywine",
+            "rating": 0.77,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 5,
+        "fields": {
+            "name": "Anita",
+            "username": "anidundo",
+            "rating": 4.16,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 6,
+        "fields": {
+            "name": "Tanja Fischer",
+            "username": "aworldfullofstudies",
+            "rating": 4.07,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 7,
+        "fields": {
+            "name": "Alice",
+            "username": "midsizealice",
+            "rating": 2.78,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 8,
+        "fields": {
+            "name": "Destiny Underwood",
+            "username": "cashma",
+            "rating": 2.4,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 9,
+        "fields": {
+            "name": "Casey Rose",
+            "username": "caseyisfetch",
+            "rating": 0.65,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 10,
+        "fields": {
+            "name": "Piyo Chow",
+            "username": "petitealpaca",
+            "rating": 1.29,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 11,
+        "fields": {
+            "name": "Jessica Lutovsky",
+            "username": "mustlovefrosting",
+            "rating": 4.29,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 12,
+        "fields": {
+            "name": "Rashonda Wisner",
+            "username": "allaboutglammingup",
+            "rating": 2.2,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 13,
+        "fields": {
+            "name": "Carly Electric ",
+            "username": "carlyelectric",
+            "rating": 3.81,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 14,
+        "fields": {
+            "name": "Angela",
+            "username": "angecaptures",
+            "rating": 4.38,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 15,
+        "fields": {
+            "name": "Alla",
+            "username": "allatasty",
+            "rating": 0.03,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 16,
+        "fields": {
+            "name": "Angelica Partidas",
+            "username": "momandpalettes",
+            "rating": 3.7,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 17,
+        "fields": {
+            "name": "Aleah Sequoia Taylor",
+            "username": "aleahsequioa",
+            "rating": 3.91,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 18,
+        "fields": {
+            "name": "Cheyenne Hoffman",
+            "username": "cheyennehoffman",
+            "rating": 1.65,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 19,
+        "fields": {
+            "name": "Alina Dumitru",
+            "username": "authenticallyalina",
+            "rating": 0.98,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 20,
+        "fields": {
+            "name": "Himanshu Yadav",
+            "username": "hackindtech",
+            "rating": 4.83,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 21,
+        "fields": {
+            "name": "Mizz Flip",
+            "username": "mizzflip",
+            "rating": 2.82,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 22,
+        "fields": {
+            "name": "Chantae Mcmillan",
+            "username": "chantaemac",
+            "rating": 3.75,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 23,
+        "fields": {
+            "name": "Femalu Javines",
+            "username": "femsfaves",
+            "rating": 3.02,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 24,
+        "fields": {
+            "name": "Dequawn Quinshae Brown",
+            "username": "dequawnbrown",
+            "rating": 3.3,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 25,
+        "fields": {
+            "name": "Grant & Bianca King",
+            "username": "livinlikekings",
+            "rating": 2.1,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 26,
+        "fields": {
+            "name": "Alexandra Fogarty",
+            "username": "uncorkingmomlife",
+            "rating": 3.01,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 27,
+        "fields": {
+            "name": "M\u00e9gane SALMON",
+            "username": "megslmn",
+            "rating": 0.67,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 28,
+        "fields": {
+            "name": "Carly Rogers",
+            "username": "carlyrogers",
+            "rating": 4.86,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 29,
+        "fields": {
+            "name": "Bronwyn Price",
+            "username": "bronwynprice",
+            "rating": 4.5,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 30,
+        "fields": {
+            "name": "Ashley Miranda",
+            "username": "ashgabrielle",
+            "rating": 0.93,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 31,
+        "fields": {
+            "name": "Chlo\u00e9 Parenteau ",
+            "username": "onemorechloe",
+            "rating": 1.07,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 32,
+        "fields": {
+            "name": "Kaitlyn Divelbiss",
+            "username": "iamkdiv",
+            "rating": 2.56,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 33,
+        "fields": {
+            "name": "Katrina Shavrina",
+            "username": "kat-shavrina",
+            "rating": 2.08,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 34,
+        "fields": {
+            "name": "Emily Varr",
+            "username": "emilyvarr",
+            "rating": 3.7,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 35,
+        "fields": {
+            "name": "Sabrina Pougnet",
+            "username": "aspenackley",
+            "rating": 2.64,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 36,
+        "fields": {
+            "name": "Kashea Dunston",
+            "username": "kashthedolll",
+            "rating": 1.48,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 37,
+        "fields": {
+            "name": "Cheyenne Depree",
+            "username": "cheyennedepree",
+            "rating": 3.92,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 38,
+        "fields": {
+            "name": "Gabrielle",
+            "username": "studioroam",
+            "rating": 2.43,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 39,
+        "fields": {
+            "name": "Maham Batool",
+            "username": "mahambatool",
+            "rating": 0.15,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 40,
+        "fields": {
+            "name": "Jocelyn Binder",
+            "username": "jocelynbinder",
+            "rating": 4.0,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 41,
+        "fields": {
+            "name": "Christina Marshall",
+            "username": "bookedtildawn",
+            "rating": 2.85,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 42,
+        "fields": {
+            "name": "Madison Johnson",
+            "username": "classicliteraturelove",
+            "rating": 4.49,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 43,
+        "fields": {
+            "name": "Sole basaldua",
+            "username": "solebasaldua",
+            "rating": 2.33,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 44,
+        "fields": {
+            "name": "Costi Zaharia ",
+            "username": "costicy",
+            "rating": 4.01,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 45,
+        "fields": {
+            "name": "Nicole Bishop",
+            "username": "nicolebshp",
+            "rating": 3.76,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 46,
+        "fields": {
+            "name": "In\u00eas Botelho",
+            "username": "inesrbotelho",
+            "rating": 3.2,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 47,
+        "fields": {
+            "name": "Jessica Lynn",
+            "username": "jessica-lynn",
+            "rating": 3.18,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 48,
+        "fields": {
+            "name": "Stefania Montella ",
+            "username": "bluebonfires",
+            "rating": 2.16,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 49,
+        "fields": {
+            "name": "Jun Shim",
+            "username": "junijini",
+            "rating": 1.77,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 50,
+        "fields": {
+            "name": "Julie Malbouef",
+            "username": "mamalbouef",
+            "rating": 0.91,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 51,
+        "fields": {
+            "name": "ashley carty ",
+            "username": "ashleycarty",
+            "rating": 0.28,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 52,
+        "fields": {
+            "name": "Diamond Saint",
+            "username": "diamondmsaint",
+            "rating": 4.41,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 53,
+        "fields": {
+            "name": "Adelina Panduru",
+            "username": "ugccreator4u",
+            "rating": 4.32,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 54,
+        "fields": {
+            "name": "Cooper Brabbins",
+            "username": "cooperbrabbins",
+            "rating": 4.88,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 55,
+        "fields": {
+            "name": "Jade Jones",
+            "username": "jadesjournall",
+            "rating": 2.22,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 56,
+        "fields": {
+            "name": "Elena Breeze",
+            "username": "elenabreeze",
+            "rating": 1.17,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 57,
+        "fields": {
+            "name": "Studio SuHye",
+            "username": "suheyee",
+            "rating": 2.34,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 58,
+        "fields": {
+            "name": "Gabriel GLXperiences",
+            "username": "glxperiences",
+            "rating": 0.7,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 59,
+        "fields": {
+            "name": "Halsey Howard",
+            "username": "halsey",
+            "rating": 0.73,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 60,
+        "fields": {
+            "name": "Natasha Najjar",
+            "username": "countcolors",
+            "rating": 1.75,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 61,
+        "fields": {
+            "name": "Torie Jaden",
+            "username": "toriejaden",
+            "rating": 2.97,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 62,
+        "fields": {
+            "name": "Helen Stern",
+            "username": "elenkop",
+            "rating": 2.8,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 63,
+        "fields": {
+            "name": "Megan McKay",
+            "username": "meganugc",
+            "rating": 3.05,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 64,
+        "fields": {
+            "name": "Beth McKenzie",
+            "username": "iambethmckenzie",
+            "rating": 2.27,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 65,
+        "fields": {
+            "name": "Tyler Perry",
+            "username": "contentmachine",
+            "rating": 1.93,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 66,
+        "fields": {
+            "name": "Maria Gebel Nu\u00f1ez",
+            "username": "mgnsocialsuite",
+            "rating": 1.03,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 67,
+        "fields": {
+            "name": "Nikaila Alim",
+            "username": "nikaila",
+            "rating": 1.78,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 68,
+        "fields": {
+            "name": "Ronan irwin ",
+            "username": "realaccountfr",
+            "rating": 0.05,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 69,
+        "fields": {
+            "name": "Taylor Belcher",
+            "username": "bellarosamedia",
+            "rating": 0.95,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 70,
+        "fields": {
+            "name": "Melissa Kenya",
+            "username": "melissakenyaa",
+            "rating": 2.93,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 71,
+        "fields": {
+            "name": "Luca Donato",
+            "username": "lucadonato",
+            "rating": 0.41,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 72,
+        "fields": {
+            "name": "Marina Godinez",
+            "username": "marinagodinezz",
+            "rating": 1.86,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 73,
+        "fields": {
+            "name": "Adeeva Matekeua",
+            "username": "christchurchgal",
+            "rating": 1.65,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 74,
+        "fields": {
+            "name": "Sophie Reece",
+            "username": "sophsstudio",
+            "rating": 3.78,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 75,
+        "fields": {
+            "name": "Krisi T\u00f6ller",
+            "username": "veganharbourvienna",
+            "rating": 1.38,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 76,
+        "fields": {
+            "name": "Mariana Galez",
+            "username": "marianagalez",
+            "rating": 4.39,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 77,
+        "fields": {
+            "name": "Elena Garc\u00eda ",
+            "username": "erenahanami",
+            "rating": 1.34,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 78,
+        "fields": {
+            "name": "Alejandro Machado",
+            "username": "aleirl",
+            "rating": 4.71,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 79,
+        "fields": {
+            "name": "Brittney",
+            "username": "brittneyfredericks",
+            "rating": 3.28,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 80,
+        "fields": {
+            "name": "Jeremiah",
+            "username": "jwitthepats",
+            "rating": 2.7,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 81,
+        "fields": {
+            "name": "Rosa Virginia",
+            "username": "rosavirginia",
+            "rating": 3.4,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 82,
+        "fields": {
+            "name": "Devaney Leslie",
+            "username": "sheisdv",
+            "rating": 1.78,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 83,
+        "fields": {
+            "name": "Paloma Ramos",
+            "username": "laviedepaloma",
+            "rating": 1.53,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 84,
+        "fields": {
+            "name": "Donya Mizani",
+            "username": "donyamizani",
+            "rating": 3.69,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 85,
+        "fields": {
+            "name": "Emmanuel osayande",
+            "username": "emizzle11",
+            "rating": 3.22,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 86,
+        "fields": {
+            "name": "Dinh Viet Nguyen ",
+            "username": "viegrow",
+            "rating": 4.78,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 87,
+        "fields": {
+            "name": "Taylor Marchant ",
+            "username": "taylormarchantsocial",
+            "rating": 4.43,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 88,
+        "fields": {
+            "name": "nikki nickel",
+            "username": "nikkinickel",
+            "rating": 4.21,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 89,
+        "fields": {
+            "name": "Lakeysha Dhanai",
+            "username": "lakeysha",
+            "rating": 4.1,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 90,
+        "fields": {
+            "name": "Erykah Troop",
+            "username": "erykah",
+            "rating": 4.3,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 91,
+        "fields": {
+            "name": "Angelina Jacob",
+            "username": "yinyangelina",
+            "rating": 2.39,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 92,
+        "fields": {
+            "name": "Elisa Mulder",
+            "username": "elisaesm",
+            "rating": 3.12,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 93,
+        "fields": {
+            "name": "Adam 2 Jours",
+            "username": "adam2jours",
+            "rating": 4.26,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 94,
+        "fields": {
+            "name": "Bookings For Daphnique",
+            "username": "iamdsprings",
+            "rating": 0.53,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 95,
+        "fields": {
+            "name": "Jovana Lazarevic",
+            "username": "jovanalazarevic",
+            "rating": 4.27,
+            "platform": "TT"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 96,
+        "fields": {
+            "name": "Lya",
+            "username": "domin1can",
+            "rating": 0.84,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 97,
+        "fields": {
+            "name": "Novian Cherry",
+            "username": "novaakan3",
+            "rating": 2.82,
+            "platform": "IG"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 98,
+        "fields": {
+            "name": "Luna Chen",
+            "username": "lunachenofficial",
+            "rating": 1.41,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 99,
+        "fields": {
+            "name": "Jodie weston",
+            "username": "missjodieweston",
+            "rating": 3.6,
+            "platform": "UGC"
+        }
+    },
+    {
+        "model": "creators.creator",
+        "pk": 100,
+        "fields": {
+            "name": "Ana Ruiz",
+            "username": "monosviajeros",
+            "rating": 0.77,
+            "platform": "TT"
+        }
+    }
+]

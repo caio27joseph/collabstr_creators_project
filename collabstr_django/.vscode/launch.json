@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/atm_backend/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "justMyCode": true,
+            "python": "${workspaceFolder}/venv/bin/python"
+        },
+        {
+            "name": "Pytest",
+            "type": "python",
+            "cwd": "${workspaceFolder}/collabstr_django",
+            "request": "launch",
+            "module": "pytest",
+            "args": [],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        }
+    ]
+}
