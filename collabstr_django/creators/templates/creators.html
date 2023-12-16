@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Collabstr | Creators</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
+    <meta charset="UTF-8" />
+    <style>
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/creator.js' %}"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-row">
+        <div>
+          <img alt="Collabstr logo" class="full-logo-img" src="https://d5ik1gor6xydq.cloudfront.net/websiteImages/logo.svg" />
+        </div>
+        <div class="header-routes">
+          <div class="header-link">Login</div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="platform-filter">
+        <div class="toggle-element">Instagram</div>
+        <span class="vertical-divider"></span>
+        <div class="toggle-element">TikTok</div>
+        <span class="vertical-divider"></span>
+        <div class="toggle-element">User Generated Content</div>
+      </div>
+      <div class="influencers-section">
+        <h1 class="result-title">Influencers</h1>
+        <div class="influencer-results" id="influencer-results">
+          {% for creator in creators %}
+            <div class="influencer-card">
+              <div class="profile-listing-img-holder">
+                <div class="save-btn" data-profile-id="22044">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512">
+                    <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+                    <path fill="white" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                  </svg>
+                </div>
+
+                {% if creator.first_content_url %}
+                  {% if creator.is_video %}
+                    <video class="profile-listing-media" src="{{ creator.first_content_url }}" alt="content by {{ creator.name }}"></video>
+                    <div class="video-tooltip">Video</div>
+                  {% else %}
+                    <img loading="lazy" class="profile-listing-img" src="{{ creator.first_content_url }}" alt="content by {{ creator.name }}" />
+                  {% endif %}
+                {% endif %}
+
+                <div class="profile-listing-owner-holder">
+                  <div class="profile-listing-owner-info-holder">
+                    <div class="profile-listing-owner-name">{{ creator.name }}</div>
+                    <div class="profile-listing-owner-username">@{{ creator.username }}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-listing-info-row">
+                <div class="profile-listing-platform">
+                  {% if creator.platform == "IG" %}
+                    Instagram
+                  {% elif creator.platform == "TT" %}
+                    TikTok
+                  {% elif creator.platform == "UGC" %}
+                    User Generated Content
+                  {% endif %}
+                </div>
+                <div class="profile-listing-rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.12 9.88005C21.0781 9.74719 20.9996 9.62884 20.8935 9.53862C20.7873 9.4484 20.6579 9.38997 20.52 9.37005L15.1 8.58005L12.67 3.67005C12.6008 3.55403 12.5027 3.45795 12.3853 3.39123C12.2678 3.32451 12.1351 3.28943 12 3.28943C11.8649 3.28943 11.7322 3.32451 11.6147 3.39123C11.4973 3.45795 11.3991 3.55403 11.33 3.67005L8.89999 8.58005L3.47999 9.37005C3.34211 9.38997 3.21266 9.4484 3.10652 9.53862C3.00038 9.62884 2.92186 9.74719 2.87999 9.88005C2.83529 10.0124 2.82846 10.1547 2.86027 10.2907C2.89207 10.4268 2.96124 10.5512 3.05999 10.6501L6.99999 14.4701L6.06999 19.8701C6.04642 20.0091 6.06199 20.1519 6.11497 20.2826C6.16796 20.4133 6.25625 20.5267 6.36999 20.6101C6.48391 20.6912 6.61825 20.7389 6.75785 20.7478C6.89746 20.7566 7.03675 20.7262 7.15999 20.6601L12 18.1101L16.85 20.6601C16.9573 20.7189 17.0776 20.7499 17.2 20.7501C17.3573 20.7482 17.5105 20.6995 17.64 20.6101C17.7537 20.5267 17.842 20.4133 17.895 20.2826C17.948 20.1519 17.9636 20.0091 17.94 19.8701L17 14.4701L20.93 10.6501C21.0305 10.5523 21.1015 10.4283 21.1351 10.2922C21.1687 10.1561 21.1634 10.0133 21.12 9.88005Z" fill="#000000" />
+                  </svg>
+                  <span>{{ creator.rating }}</span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    
+    $(document).on('click', '.toggle-element', function () {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active')
+        loadCreators(1);
+      } else {
+        $('.toggle-element').removeClass('active')
+        $(this).addClass('active')
+        var platform = $(this).text().trim();
+        loadCreators(1, platform);
+      }
+    })
+    
+    $(document).on('click', '.profile-listing-img-holder', function () {
+      var video = $(this).find('video').get(0)
+      var videoIcon = $(this).find('.video-tooltip')
+    
+      if (video) {
+        if (video.paused) {
+          video.play()
+          videoIcon.hide() // Hide the player icon when the video is playing
+        } else {
+          video.pause()
+          videoIcon.show() // Show the player icon when the video is paused
+        }
+      }
+    })
+    $(document).on('click', '.save-btn', function (event) {
+      event.stopPropagation()
+      event.preventDefault()
+    
+      var mediaContainer = $(this).closest('.profile-listing-img-holder')
+      var media = mediaContainer.find('.profile-listing-media, .profile-listing-img').get(0)
+    
+      if (media) {
+        var mediaSrc = media.src || media.getAttribute('src') // Ensure src is correctly obtained
+    
+        if (media.tagName.toLowerCase() === 'img') {
+          // For an image, create an anchor tag and trigger a download
+          $('<a>', {
+            href: mediaSrc,
+            download: 'download-image.jpg' // Set the download filename
+          })[0].click()
+        } else if (media.tagName.toLowerCase() === 'video') {
+          // For a video, navigate to the video URL or open it in a new tab
+          window.open(mediaSrc, '_blank')
+        }
+      } else {
+        console.log('No media found in the container')
+      }
+    })
+  </script>
+</html>

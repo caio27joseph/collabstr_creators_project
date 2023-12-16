@@ -1,0 +1,315 @@
+:root {
+    --black: #222;
+    --lightGray: rgb(151, 163, 197);
+    --lightBoxShadow: rgba(120, 120, 170, 0.15) 0 2px 16px 0;
+    --mediumBoxShadow: rgba(120, 120, 170, 0.2) 0 2px 10px 0;
+    --darkBoxShadow: rgba(120, 120, 170, 0.3) 0 2px 10px 0;
+    --whiteText: #efefef;
+    --green: #d6efe2;
+    --red: #feedf2;
+    --orange: #fbebd9;
+    --blue: #eaeeff;
+    --collabstrDark: #ff899b;
+    --collabstrMiddle: #ffadbb;
+    --gradientText: linear-gradient(90deg,
+            rgb(255 132 160) 0%,
+            rgb(251 102 157) 20%,
+            rgb(179 45 194) 95%,
+            rgb(136, 95, 183) 100%);
+    --instagram: #d756ff;
+    --tiktok: #ff5fa3;
+    --youtube: #ff3232;
+    --twitter: #1da1f2;
+    --twitch: #9146ff;
+    --amazon: #ff9900;
+    --ugc: #222;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+}
+
+*:focus {
+    outline: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 85px;
+    height: 85px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.full-logo-img {
+    width: 121px;
+    height: auto;
+    max-height: 35px;
+}
+
+#content {
+    width: 88%;
+    max-width: 1600px;
+    margin: 0 auto 8% auto;
+}
+
+/********* Your CSS Here **********/
+
+/********* ------------- **********/
+
+@media only screen and (max-width: 800px) {
+    .header {
+        min-height: 65px;
+        height: 65px;
+    }
+
+    .header-row {
+        width: 92%;
+    }
+
+    .full-logo-img {
+        width: 105px;
+        max-height: 28px;
+    }
+
+    #content {
+        width: 92%;
+        margin: 0 auto 15% auto;
+    }
+}
+
+.header-routes {
+    display: flex;
+    align-items: center;
+}
+
+.header-routes {
+    display: flex;
+    align-items: center;
+}
+
+.header-routes>* {
+    font-weight: 600;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+/* Influencer CSS */
+
+.influencer-results {
+    display: grid;
+    grid-gap: 35px 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.influencer-card {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.result-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile-listing-img-holder {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.profile-listing-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-listing-img:hover {
+    transform: scale(1.1);
+}
+
+.profile-listing-media {
+    /* Class used for both images and videos */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-listing-media:hover {
+    transform: scale(1.1);
+}
+
+.video-tooltip {
+    position: absolute;
+    top: 10px;
+    /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2;
+}
+
+.profile-listing-img-holder:hover .video-tooltip {
+    visibility: visible;
+    /* Show tooltip on hover */
+    opacity: 1;
+}
+
+/*  */
+.profile-listing-img-holder .save-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 21px;
+    height: 18px;
+    z-index: 3;
+}
+
+.save-btn svg path {
+    stroke: var(--lightGray);
+    stroke-width: 15px;
+}
+
+.profile-listing-owner-holder {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.profile-listing-owner-name,
+.profile-listing-owner-location {
+    color: white;
+}
+
+.profile-listing-owner-username {
+    color: #aaaaaa;
+}
+
+.profile-listing-rating {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-listing-rating span {
+    padding: 0;
+}
+
+.profile-listing-info-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
+
+.profile-listing-info-row .profile-listing-owner-platform {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--lightGray);
+}
+
+.profile-listing-info-row .profile-listing-owner-username {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Platform Filters */
+.platform-filter {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: var(--lightBoxShadow);
+    overflow: hidden;
+}
+
+.platform-filter>div:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.platform-filter>div {
+    width: 34%;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.7rem;
+    overflow: hidden;
+}
+
+@media (min-width: 480px) {
+    .platform-filter>div {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .platform-filter>div {
+        font-size: 1.1rem;
+    }
+}
+
+.platform-filter>div.active {
+    background: var(--collabstrDark);
+    color: var(--whiteText);
+
+}
+
+.platform-filter>div:hover {
+    background: var(--collabstrMiddle);
+    color: var(--whiteText);
+    cursor: pointer;
+}
+
+@media (min-width: 780px) {
+    .platform-filter {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}

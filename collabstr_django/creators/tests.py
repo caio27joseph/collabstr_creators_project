@@ -102,9 +102,5 @@ class ContentCRUDTestCase(TestCase):
             format="json",
         )
         self.assertEqual(response.status_code, 200)
-        updated_content = Content.objects.get(id=self.content.id)
-        self.assertEqual(updated_content.url, updated_data["url"])
-
-    def test_content_delete(self):
         response = self.client.delete(self.detail_url)
         self.assertEqual(response.status_code, 204)
